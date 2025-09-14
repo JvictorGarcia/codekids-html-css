@@ -16,6 +16,17 @@ Site responsivo, acessível e simples de manter (deploy via **GitHub Pages**).
 ![Preview do projeto](docs/preview.png)
 
 
+---
+
+
+## 👥 Equipe do Projeto
+
+- **José Victor Garcia Zacarias** ([@JvictorGarcia](https://github.com/JvictorGarcia))  
+- **Marcos Gustavo Lara**   ([@GustavoLaraa](https://github.com/GustavoLaraa))
+- **Lucas Nishimura Sato**  
+- **Kevin Luiz Botelho Lima**  
+
+> Todos participaram da elaboração do curso e das atividades de HTML & CSS.
 
 ---
 
