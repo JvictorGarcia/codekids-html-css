@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeKids — Desafio: Página Pessoal</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+  <div class="app">
+    <aside class="sidebar" aria-label="Seções do curso">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CK</div>
+        <div class="brand-text"><strong>CodeKids</strong><span>Aprenda HTML & CSS</span></div>
+      </div>
+      <nav class="lessons" aria-label="Aulas e exercícios">
+        <a class="lesson " href="intro-html.html"><div class="icon video">▶</div><div class="meta"><strong>Introdução ao HTML</strong><small>Vídeo · 15 min</small></div></a>
+        <a class="lesson " href="tags-basicas.html"><div class="icon video">▶</div><div class="meta"><strong>Tags HTML Básicas</strong><small>Vídeo · 20 min</small></div></a>
+        <a class="lesson " href="estrutura-pagina.html"><div class="icon exercise">✦</div><div class="meta"><strong>Estrutura de uma Página</strong><small>Exercício · 25 min</small></div></a>
+        <a class="lesson " href="introducao-css.html"><div class="icon video">▶</div><div class="meta"><strong>Introdução ao CSS</strong><small>Vídeo · 15 min</small></div></a>
+        <a class="lesson active" href="desafio-pessoal.html"><div class="icon exercise">✦</div><div class="meta"><strong>Desafio: Página Pessoal</strong><small>Exercício · 30 min</small></div></a>
+      </nav>
+      <div class="sidebar-footer"><small>© 2025 CodeKids</small></div>
+    </aside>
+
+    <main id="conteudo" class="content">
+      <header class="topbar">
+        <div class="breadcrumbs"><a href="intro-html.html">Início</a> <span>/</span> <a href="#">Projeto</a> <span>/</span> <strong>Desafio: Página Pessoal</strong></div>
+        <div class="actions"><button class="btn ghost">Pré-visualizar</button><button class="btn ghost">Editar conteúdo</button><button class="btn primary">Código</button></div>
+      </header>
+
+      <section class="page-header">
+        <h1>Desafio: Página Pessoal</h1>
+        <p>Construa sua página pessoal com HTML e CSS.</p>
+        <div class="badges"><span class="badge success">Exercício</span><span class="badge neutral">Projeto</span></div>
+        <div class="progress"><span>0% Completo</span><div class="bar"><div class="fill" style="width:0%"></div></div><div class="stars"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div></div>
+      </section>
+
+      <section class="card objective"><h2>🎯 Objetivo</h2><p>Aplicar tudo o que aprendeu para criar uma página pessoal simples.</p></section>
+      <section class="card"><h2>💡 Instruções</h2><ol class='steps'><li>Crie seções: Sobre, Interesses e Contato.</li><li>Adicione links e uma imagem com alt.</li><li>Estilize com sua paleta de cores.</li></ol></section>
+      <section class="card code"><div class="card-header"><h2>🧩 Código Inicial</h2><button class="btn ghost small" onclick="copyCode()">Copiar</button></div><pre><code id="starter-code">&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Minha Página Pessoal&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;&lt;h1&gt;Olá! Eu sou a/o ...&lt;/h1&gt;&lt;/header&gt;
+  &lt;main&gt;
+    &lt;section&gt;&lt;h2&gt;Sobre mim&lt;/h2&gt;&lt;p&gt;Conte um pouco sobre você.&lt;/p&gt;&lt;/section&gt;
+    &lt;section&gt;&lt;h2&gt;Interesses&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;&lt;/section&gt;
+    &lt;section&gt;&lt;h2&gt;Contato&lt;/h2&gt;&lt;p&gt;Email: voce@exemplo.com&lt;/p&gt;&lt;/section&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;&lt;small&gt;© 2025 - Minha Página&lt;/small&gt;&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></section>
+      <section class="grid two">
+        <article class="card resource"><h3>📚 Apostilas</h3><p>Materiais de apoio em PDF.</p><ul class="links"><li><a href="#" target="_blank">Guia do Projeto — Página Pessoal</a></li></ul></article>
+        <article class="card resource"><h3>🎬 Vídeo-aulas</h3><p>Aulas curtas com exemplos práticos.</p><ul class="links"><li><a href="#" target="_blank">Aula — Dicas para o Projeto</a></li></ul></article>
+      </section>
+      <section class="card"><h2>🖼️ Galeria / Imagens do Projeto</h2><div class="gallery"><div class="ph">Imagem 1</div><div class="ph">Imagem 2</div><div class="ph">Imagem 3</div><div class="ph">Imagem 4</div></div><p class="muted">Substitua por imagens reais e use <code>alt</code> descritivo.</p></section>
+      <footer class="page-footer"><small>Precisa de ajuda? Fale com o professor ou consulte as apostilas.</small></footer>
+    </main>
+  </div>
+  <script>
+    function copyCode(){ const text = document.getElementById('starter-code').innerText; navigator.clipboard.writeText(text).then(()=>alert('Código copiado!')); }
+  </script>
+</body>
+</html>

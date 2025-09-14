@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeKids — Introdução ao CSS</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+  <div class="app">
+    <aside class="sidebar" aria-label="Seções do curso">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">CK</div>
+        <div class="brand-text"><strong>CodeKids</strong><span>Aprenda HTML & CSS</span></div>
+      </div>
+      <nav class="lessons" aria-label="Aulas e exercícios">
+        <a class="lesson " href="intro-html.html"><div class="icon video">▶</div><div class="meta"><strong>Introdução ao HTML</strong><small>Vídeo · 15 min</small></div></a>
+        <a class="lesson " href="tags-basicas.html"><div class="icon video">▶</div><div class="meta"><strong>Tags HTML Básicas</strong><small>Vídeo · 20 min</small></div></a>
+        <a class="lesson " href="estrutura-pagina.html"><div class="icon exercise">✦</div><div class="meta"><strong>Estrutura de uma Página</strong><small>Exercício · 25 min</small></div></a>
+        <a class="lesson active" href="introducao-css.html"><div class="icon video">▶</div><div class="meta"><strong>Introdução ao CSS</strong><small>Vídeo · 15 min</small></div></a>
+        <a class="lesson " href="desafio-pessoal.html"><div class="icon exercise">✦</div><div class="meta"><strong>Desafio: Página Pessoal</strong><small>Exercício · 30 min</small></div></a>
+      </nav>
+      <div class="sidebar-footer"><small>© 2025 CodeKids</small></div>
+    </aside>
+
+    <main id="conteudo" class="content">
+      <header class="topbar">
+        <div class="breadcrumbs"><a href="intro-html.html">Início</a> <span>/</span> <a href="#">CSS</a> <span>/</span> <strong>Introdução ao CSS</strong></div>
+        <div class="actions"><button class="btn ghost">Pré-visualizar</button><button class="btn ghost">Editar conteúdo</button><button class="btn primary">Código</button></div>
+      </header>
+
+      <section class="page-header">
+        <h1>Introdução ao CSS</h1>
+        <p>Como estilizar páginas com folhas de estilo.</p>
+        <div class="badges"><span class="badge neutral">CSS</span><span class="badge success">Vídeo</span></div>
+        <div class="progress"><span>0% Completo</span><div class="bar"><div class="fill" style="width:0%"></div></div><div class="stars"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div></div>
+      </section>
+
+      <section class="card objective"><h2>🎯 Objetivo</h2><p>Entender seletores, propriedades e como ligar o CSS ao HTML.</p></section>
+      <section class="card"><h2>💡 Instruções</h2><ol class='steps'><li>Crie um arquivo styles.css.</li><li>Ligue no &lt;head&gt; com &lt;link rel=stylesheet&gt;.</li><li>Estilize h1 e p com cores e fonte.</li></ol></section>
+      <section class="card code"><div class="card-header"><h2>🧩 Código Inicial</h2><button class="btn ghost small" onclick="copyCode()">Copiar</button></div><pre><code id="starter-code">&lt;link rel="stylesheet" href="styles.css"&gt;
+h1 { color: blue; }
+p  { font-family: Arial; }</code></pre></section>
+      <section class="grid two">
+        <article class="card resource"><h3>📚 Apostilas</h3><p>Materiais de apoio em PDF.</p><ul class="links"><li><a href="#" target="_blank">Apostila 04 — CSS Básico</a></li></ul></article>
+        <article class="card resource"><h3>🎬 Vídeo-aulas</h3><p>Aulas curtas com exemplos práticos.</p><ul class="links"><li><a href="#" target="_blank">Aula 03 — Primeiros passos no CSS</a></li></ul></article>
+      </section>
+      <section class="card"><h2>🖼️ Galeria / Imagens do Projeto</h2><div class="gallery"><div class="ph">Imagem 1</div><div class="ph">Imagem 2</div><div class="ph">Imagem 3</div><div class="ph">Imagem 4</div></div><p class="muted">Substitua por imagens reais e use <code>alt</code> descritivo.</p></section>
+      <footer class="page-footer"><small>Precisa de ajuda? Fale com o professor ou consulte as apostilas.</small></footer>
+    </main>
+  </div>
+  <script>
+    function copyCode(){ const text = document.getElementById('starter-code').innerText; navigator.clipboard.writeText(text).then(()=>alert('Código copiado!')); }
+  </script>
+</body>
+</html>
