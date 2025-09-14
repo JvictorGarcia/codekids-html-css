@@ -15,7 +15,7 @@ Site responsivo, acessível e simples de manter (deploy via **GitHub Pages**).
 ## 📸 Preview
 ![Preview do projeto](docs/preview.png)
 
-> Dica: tire um print da página e salve em `docs/preview.png` para aparecer aqui bonitinho.
+
 
 ---
 
@@ -29,3 +29,25 @@ Site responsivo, acessível e simples de manter (deploy via **GitHub Pages**).
 ---
 
 ## 🧱 Estrutura
+codekids-html-css/
+├─ index.html # Entrada (liga para as demais páginas)
+├─ intro-html.html
+├─ tags-basicas.html
+├─ estrutura-pagina.html
+├─ introducao-css.html
+├─ desafio-pessoal.html
+├─ assets/
+│ └─ css/
+│ └─ styles.css
+└─ docs/
+└─ preview.png # Imagem usada no README
+
+
+
+---
+
+## 🚀 Como rodar localmente
+1. Baixe/clonar:
+   ```bash
+   git clone https://github.com/JvictorGarcia/codekids-html-css.git
+   cd codekids-html-css
