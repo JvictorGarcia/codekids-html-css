@@ -51,3 +51,11 @@ codekids-html-css/
    ```bash
    git clone https://github.com/JvictorGarcia/codekids-html-css.git
    cd codekids-html-css
+
+##  📚 Conteúdos do Curso
+
+Apostilas (PDF) → preencha os links nas listas de cada página
+
+Vídeo-aulas (até 5 min) → atualize os href="#" com seus vídeos
+
+Galeria → troque os placeholders por imagens reais e alt descritivo
