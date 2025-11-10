@@ -13,7 +13,7 @@ Site responsivo, acessível e simples de manter (deploy via **GitHub Pages**).
 ---
 
 ## 📸 Preview
-![Preview do projeto](docs/preview.png)
+![Preview do projeto](docs/Tela do site.png)
 
 
 ---
