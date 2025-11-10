@@ -23,7 +23,7 @@ Site responsivo, acessível e simples de manter (deploy via **GitHub Pages**).
 
 - **José Victor Garcia Zacarias** ([@JvictorGarcia](https://github.com/JvictorGarcia))  
 - **Marcos Gustavo Lara**   ([@GustavoLaraa](https://github.com/GustavoLaraa))
-- **Lucas Nishimura Sato**  ([@nishimura-lucas]())
+- **Lucas Nishimura Sato**  ([@nishimura-lucas](https://github.com/nishimura-lucas))
 - **Kevin Luiz Botelho Lima**  ([@KevinLuiz10](https://github.com/KevinLuiz10))
 
 > Todos participaram da elaboração do curso e das atividades de HTML & CSS.
