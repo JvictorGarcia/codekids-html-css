@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabarito — Desafio pessoal — CodeKids</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">CK</span>
+      <div>
+        <h1 class="site-title">CodeKids</h1>
+        <p class="site-subtitle">Gabarito — Desafio pessoal</p>
+      </div>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <nav>
+        <h2 class="sidebar-title">Aulas</h2>
+        <ul class="lesson-list">
+          <li><a href="intro-html.html">▶ Introdução ao HTML</a></li>
+          <li><a href="tags-basicas.html">▶ Tags HTML básicas</a></li>
+          <li><a href="estrutura-pagina.html">✦ Estrutura de uma página</a></li>
+          <li><a href="introducao-css.html">▶ Introdução ao CSS</a></li>
+          <li><a href="desafio-pessoal.html">✦ Desafio: página pessoal</a></li>
+          <li><a href="index.html">← Voltar para o início</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar-box">
+        <h3>Observação</h3>
+        <p>Existem muitas formas de resolver. Este é apenas um exemplo!</p>
+      </div>
+    </aside>
+
+    <main id="conteudo" class="content" tabindex="-1">
+      <section class="hero">
+        <h2>Gabarito oficial 🧩</h2>
+        <p>
+          Veja abaixo um exemplo completo de página HTML com CSS, seguindo todos os requisitos do desafio.
+        </p>
+      </section>
+
+      <section class="section">
+        <h3>1. HTML completo (<code>minha-pagina.html</code>)</h3>
+        <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Página da Ana&lt;/title&gt;
+    &lt;link rel="stylesheet" href="meu-estilo.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Olá, eu sou a Ana!&lt;/h1&gt;
+      &lt;p&gt;Esta é a minha primeira página feita na aula de HTML e CSS.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+      &lt;h2&gt;Sobre mim&lt;/h2&gt;
+      &lt;p&gt;Tenho 15 anos e gosto de tecnologia, música e desenhar.&lt;/p&gt;
+      &lt;p&gt;Quero aprender a fazer sites para mostrar meus trabalhos.&lt;/p&gt;
+
+      &lt;h2&gt;Coisas que eu gosto&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Ouvir música&lt;/li&gt;
+        &lt;li&gt;Jogar com meus amigos&lt;/li&gt;
+        &lt;li&gt;Assistir séries&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;h2&gt;Onde eu estudo&lt;/h2&gt;
+      &lt;p&gt;Eu uso o &lt;a href="https://www.w3schools.com" target="_blank"&gt;W3Schools&lt;/a&gt; para treinar.&lt;/p&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;Feito na aula de CodeKids — 2025&lt;/p&gt;
+    &lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <section class="section">
+        <h3>2. CSS completo (<code>meu-estilo.css</code>)</h3>
+        <pre class="code-block"><code>body {
+  background: #f3f4f6;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #2563eb;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1rem 1.5rem;
+}
+
+h2 {
+  color: #1f2937;
+  margin-top: 1.5rem;
+}
+
+p {
+  color: #374151;
+}
+
+ul {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #e5e7eb;
+  margin-top: 2rem;
+  color: #374151;
+}
+</code></pre>
+        <p>
+          Você pode mudar as cores, fontes e textos para personalizar do seu jeito.
+        </p>
+      </section>
+
+      <section class="section">
+        <a class="btn-primary" href="desafio-pessoal.html">← Voltar ao desafio</a>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>© 2025 CodeKids — Gabarito do desafio.</p>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    btn.addEventListener('click', () => {
+      const isOpen = sidebar.classList.toggle('sidebar-open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>

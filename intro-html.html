@@ -1,69 +1,139 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CodeKids — Introdução ao HTML</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introdução ao HTML — CodeKids</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
-  <div class="app">
-    <aside class="sidebar" aria-label="Seções do curso">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">CK</div>
-        <div class="brand-text"><strong>CodeKids</strong><span>Aprenda HTML & CSS</span></div>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">CK</span>
+      <div>
+        <h1 class="site-title">CodeKids</h1>
+        <p class="site-subtitle">Introdução ao HTML</p>
       </div>
-      <nav class="lessons" aria-label="Aulas e exercícios">
-        <a class="lesson active" href="intro-html.html"><div class="icon video">▶</div><div class="meta"><strong>Introdução ao HTML</strong><small>Vídeo · 15 min</small></div></a>
-        <a class="lesson " href="tags-basicas.html"><div class="icon video">▶</div><div class="meta"><strong>Tags HTML Básicas</strong><small>Vídeo · 20 min</small></div></a>
-        <a class="lesson " href="estrutura-pagina.html"><div class="icon exercise">✦</div><div class="meta"><strong>Estrutura de uma Página</strong><small>Exercício · 25 min</small></div></a>
-        <a class="lesson " href="introducao-css.html"><div class="icon video">▶</div><div class="meta"><strong>Introdução ao CSS</strong><small>Vídeo · 15 min</small></div></a>
-        <a class="lesson " href="desafio-pessoal.html"><div class="icon exercise">✦</div><div class="meta"><strong>Desafio: Página Pessoal</strong><small>Exercício · 30 min</small></div></a>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <nav>
+        <h2 class="sidebar-title">Aulas</h2>
+        <ul class="lesson-list">
+          <li><a href="intro-html.html" data-lesson="intro-html">▶ Introdução ao HTML</a></li>
+          <li><a href="tags-basicas.html" data-lesson="tags-basicas">▶ Tags HTML básicas</a></li>
+          <li><a href="estrutura-pagina.html" data-lesson="estrutura-pagina">✦ Estrutura de uma página</a></li>
+          <li><a href="introducao-css.html" data-lesson="introducao-css">▶ Introdução ao CSS</a></li>
+          <li><a href="desafio-pessoal.html" data-lesson="desafio-pessoal">✦ Desafio: página pessoal</a></li>
+          <li><a href="index.html">← Voltar para o início</a></li>
+        </ul>
       </nav>
-      <div class="sidebar-footer"><small>© 2025 CodeKids</small></div>
+      <div class="sidebar-box">
+        <h3>Dica rápida</h3>
+        <p>HTML é o conteúdo. Depois o CSS deixa bonito.</p>
+      </div>
     </aside>
 
-    <main id="conteudo" class="content">
-      <header class="topbar">
-        <div class="breadcrumbs"><a href="intro-html.html">Início</a> <span>/</span> <a href="#">HTML</a> <span>/</span> <strong>Introdução ao HTML</strong></div>
-        <div class="actions"><button class="btn ghost">Pré-visualizar</button><button class="btn ghost">Editar conteúdo</button><button class="btn primary">Código</button></div>
-      </header>
-
-      <section class="page-header">
-        <h1>Introdução ao HTML</h1>
-        <p>Conheça os conceitos básicos do HTML e sua estrutura.</p>
-        <div class="badges"><span class="badge neutral">HTML</span><span class="badge success">Vídeo</span></div>
-        <div class="progress"><span>0% Completo</span><div class="bar"><div class="fill" style="width:0%"></div></div><div class="stars"><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div></div>
+    <main id="conteudo" class="content" tabindex="-1">
+      <section class="hero">
+        <h2>O que é HTML?</h2>
+        <p>
+          HTML é a linguagem que usamos para montar o conteúdo de uma página: títulos, parágrafos, imagens, links e listas.
+        </p>
       </section>
 
-      <section class="card objective"><h2>🎯 Objetivo</h2><p>Entender para que serve o HTML e como uma página é formada.</p></section>
-      <section class="card"><h2>💡 Instruções</h2><ol class='steps'><li>Veja como o navegador lê o HTML.</li><li>Conheça a função das tags.</li><li>Abra o inspetor do navegador e observe a estrutura.</li></ol></section>
-      <section class="card code"><div class="card-header"><h2>🧩 Código Inicial</h2><button class="btn ghost small" onclick="copyCode()">Copiar</button></div><pre><code id="starter-code">&lt;!DOCTYPE html&gt;
+      <!-- cards: imagem + vídeo -->
+      <section class="section">
+        <h3>Materiais da aula</h3>
+        <div class="grid">
+          <article class="card">
+            <h4>Imagem do código</h4>
+            <p>Exemplo visual da estrutura básica de uma página HTML.</p>
+            <img src="assets/img/intro-html.png" alt="Exemplo de código da aula de introdução ao HTML" style="max-width:100%; border-radius:0.5rem; margin-top:0.5rem;">
+          </article>
+          <article class="card">
+            <h4>Vídeo da aula</h4>
+            <p>Assista à explicação completa da aula introdutória.</p>
+            <a class="btn-primary" href="https://drive.google.com/file/d/11sdPE2kFumNf4Fn3AdNLDsJNINcBbtmj/view?usp=drive_link" target="_blank" rel="noopener">Ir para o vídeo →</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- botão progresso -->
+      <section class="section">
+        <button id="concluir-aula" class="btn-primary" type="button">Marcar esta aula como concluída</button>
+      </section>
+
+      <!-- conteúdo da aula -->
+      <section class="section">
+        <h3>1. Como o HTML é escrito?</h3>
+        <p>Ele usa <strong>tags</strong>. Quase sempre uma tag abre e outra fecha.</p>
+        <pre class="code-block"><code>&lt;tag&gt;conteúdo&lt;/tag&gt;</code></pre>
+        <p>Exemplo real:</p>
+        <pre class="code-block"><code>&lt;h1&gt;Bem-vindo!&lt;/h1&gt;
+&lt;p&gt;Este é o meu primeiro parágrafo.&lt;/p&gt;</code></pre>
+      </section>
+
+      <section class="section">
+        <h3>2. Estrutura mínima de uma página</h3>
+        <p>Toda página HTML tem um esqueleto. Copie e use sempre que for criar um arquivo novo.</p>
+        <pre class="code-block"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="pt-BR"&gt;
-&lt;head&gt;
-  &lt;meta charset="utf-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-  &lt;title&gt;Olá, HTML!&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;h1&gt;Bem-vindos!&lt;/h1&gt;
-  &lt;p&gt;Este é o meu primeiro documento HTML.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></section>
-      <section class="grid two">
-        <article class="card resource"><h3>📚 Apostilas</h3><p>Materiais de apoio em PDF.</p><ul class="links"><li><a href="#" target="_blank">Apostila 01 — Introdução</a></li>
-<li><a href="#" target="_blank">Apostila 02 — HTML Básico</a></li></ul></article>
-        <article class="card resource"><h3>🎬 Vídeo-aulas</h3><p>Aulas curtas com exemplos práticos.</p><ul class="links"><li><a href="#" target="_blank">Aula 01 — O que é a Web</a></li>
-<li><a href="#" target="_blank">Aula 02 — Estrutura do HTML</a></li></ul></article>
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Minha primeira página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
+    &lt;p&gt;Comecei a aprender HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
       </section>
-      <section class="card"><h2>🖼️ Galeria / Imagens do Projeto</h2><div class="gallery"><div class="ph">Imagem 1</div><div class="ph">Imagem 2</div><div class="ph">Imagem 3</div><div class="ph">Imagem 4</div></div><p class="muted">Substitua por imagens reais e use <code>alt</code> descritivo.</p></section>
-      <footer class="page-footer"><small>Precisa de ajuda? Fale com o professor ou consulte as apostilas.</small></footer>
+
+      <section class="section">
+        <h3>3. Tags que você já pode usar</h3>
+        <ul class="steps">
+          <li><code>&lt;h1&gt;</code> até <code>&lt;h6&gt;</code> — títulos</li>
+          <li><code>&lt;p&gt;</code> — parágrafos</li>
+          <li><code>&lt;a&gt;</code> — links</li>
+          <li><code>&lt;img&gt;</code> — imagens</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3>4. Exercício rápido</h3>
+        <ol class="steps">
+          <li>Crie um arquivo chamado <strong>meu-site.html</strong>.</li>
+          <li>Cole o modelo acima.</li>
+          <li>Troque o texto do &lt;h1&gt; pelo seu nome.</li>
+          <li>Adicione um parágrafo dizendo o que você quer aprender.</li>
+        </ol>
+      </section>
+
+      <!-- apostila -->
+      <section class="section">
+        <h3>📘 Apostila da Aula</h3>
+        <p>Baixe o material complementar para revisar e praticar offline.</p>
+        <a class="btn-primary" href="assets/apostilas/apostila-intro-html.pdf" target="_blank" rel="noopener">Baixar apostila (PDF) →</a>
+      </section>
+
+      <!-- navegação -->
+      <section class="section">
+        <a class="btn-primary" href="tags-basicas.html">Ir para: Tags HTML básicas →</a>
+      </section>
     </main>
   </div>
-  <script>
-    function copyCode(){ const text = document.getElementById('starter-code').innerText; navigator.clipboard.writeText(text).then(()=>alert('Código copiado!')); }
-  </script>
+
+  <footer class="footer">
+    <p>© 2025 CodeKids — Introdução ao HTML.</p>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
