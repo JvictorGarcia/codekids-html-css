@@ -65,8 +65,8 @@ codekids-html-css/
 
 ##  📚 Conteúdos do Curso
 
-Apostilas (PDF) → preencha os links nas listas de cada página
+Apostilas (PDF)
 
-Vídeo-aulas (até 5 min) → atualize os href="#" com seus vídeos
+Vídeo-aulas (até 5 min) 
 
-Galeria → troque os placeholders por imagens reais e alt descritivo
+Galeria 
